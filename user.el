@@ -10,7 +10,7 @@
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
 
-;; (setq initial-frame-alist '((top . 0) (left . 0) (width . 20) (height . 20)))
+;; (setq initial-frame-alist '((top . 0) (left . 0) (width . 187) (height . 77)))
 
 
 ;; Place downloaded elisp files in this directory. You'll then be able
@@ -50,3 +50,25 @@
 
 ;; Save here instead of littering current directory with emacs backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
+
+;; Window switching keybindings
+(global-set-key (kbd "C-x <up>") 'windmove-up)
+(global-set-key (kbd "C-x <down>") 'windmove-down)
+(global-set-key (kbd "C-x <right>") 'windmove-right)
+(global-set-key (kbd "C-x <left>") 'windmove-left)
+
+;; Unsets the Cmd-p command which opened a dialogue that would never close
+(global-unset-key (kbd "s-p"))
+
+;; Activate git gutter
+(global-git-gutter-mode +1)
+
+;; CIDER settings
+(setq cider-repl-popup-stacktraces nil)
+(setq cider-auto-select-error-buffer nil)
+
+;; keyboard scroll one line at a time
+(setq scroll-step 1) 
+
+;; add octave mode
+(add-to-list 'auto-mode-alist '("\\.m\\'" . octave-mode))
