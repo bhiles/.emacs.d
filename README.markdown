@@ -1,3 +1,5 @@
+This is a fork of [flyingmachine/emacs-for-clojure](https://github.com/flyingmachine/emacs-for-clojure)
+
 # Emacs for Clojure Starter Kit
 
 This repo is a minor extension of [The Emacs Starter Kit, v2](https://github.com/technomancy/emacs-starter-kit/tree/v2). Added functionality:
