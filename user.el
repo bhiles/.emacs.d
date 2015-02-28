@@ -72,3 +72,15 @@
 
 ;; add octave mode
 (add-to-list 'auto-mode-alist '("\\.m\\'" . octave-mode))
+
+;; add 2 spaces for javascript indentation
+(setq js-indent-level 2)
+
+;; add diff-mode for git commits
+(add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
+
+;; alter diff-mode colors
+(custom-set-faces
+ '(diff-added ((t (:foreground "Green"))) 'now)
+ '(diff-removed ((t (:foreground "Red"))) 'now)
+ )
