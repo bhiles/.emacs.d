@@ -84,3 +84,6 @@
  '(diff-added ((t (:foreground "Green"))) 'now)
  '(diff-removed ((t (:foreground "Red"))) 'now)
  )
+
+;; enable whitespace mode all the time
+(global-whitespace-mode)
